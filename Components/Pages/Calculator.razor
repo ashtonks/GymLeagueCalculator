@@ -1,0 +1,250 @@
+﻿@page "/"
+
+<h1 style="margin-bottom: 20px; text-align: center">Gym League Shop Power Up Calculator</h1>
+<div class="container">
+    <div class="divider">
+
+    </div>
+    
+    <div class="spacer"></div>
+
+    <div class="content">
+
+        @*Chocolate Bar*@
+        <div class="input-group">
+            <label for="chocBar">Chocolate Bars:</label>
+            <input type="text" @bind="food.numChocBar" id="chocBar" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumChocBar = food.numChocBar * 50)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeChocBar * food.numChocBar)</div>
+        <div class="spacer"></div>
+       
+        @*Chips*@
+        <div class="input-group">
+            <label for="chips">Chips:</label>
+            <input type="text" @bind="food.numChips" id="chips" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumChips = food.numChips * 90)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeChips * food.numChips)</div>
+        <div class="spacer"></div>
+
+        @*Chicken Wings*@
+        <div class="input-group">
+            <label for="chickenWings">Chicken Wings:</label>
+            <input type="text" @bind="food.numChickWings" id="chickenWings" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumChickWings = food.numChickWings * 112)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeChickWings * food.numChickWings)</div>
+        <div class="spacer"></div>
+
+        @*Master Drink*@
+        <div class="input-group">
+            <label for="masterDrink">Master Drink:</label>
+            <input type="text" @bind="food.numMastDrink" id="masterDrink" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumMastDrink = food.numMastDrink * 127)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeMastDrink * food.numMastDrink)</div>
+        <div class="spacer"></div>
+
+        @*Protein Bar*@
+        <div class="input-group">
+            <label for="proteinBar">Protein Bar:</label>
+            <input type="text" @bind="food.numProtBar" id="proteinBar" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumProtBar = food.numProtBar * 150)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeProtBar * food.numProtBar)</div>
+        <div class="spacer"></div>
+
+        @*Cheap Protein Powder*@
+        <div class="input-group">
+            <label for="cheapProteinPowder">Cheap Protein Powder:</label>
+            <input type="text" @bind="food.numCheapProtein" id="cheapProteinPowder" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumCheapProtein = food.numCheapProtein * 180)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeCheapProtein * food.numCheapProtein)</div>
+        <div class="spacer"></div>
+
+        @*Steak*@
+        <div class="input-group">
+            <label for="steak">Steak:</label>
+            <input type="text" @bind="food.numSteak" id="steak" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumSteak = food.numSteak * 210)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeSteak * food.numSteak)</div>
+        <div class="spacer"></div>
+
+        @*Cheap Body Oil*@
+        <div class="input-group">
+            <label for="cheapOil">Cheap Body Oil:</label>
+            <input type="text" @bind="food.numCheapOil" id="cheapOil" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumCheapOil = food.numCheapOil * 525)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeCheapOil * food.numCheapOil)</div>
+        <div class="spacer"></div>
+
+        @*Chicken Wings*@
+        <div class="input-group">
+            <label for="chickenWings">Chicken Wings:</label>
+            <input type="text" @bind="food.numChickWings" id="chickenWings" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumChickWings = food.numChickWings * 112)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeChickWings * food.numChickWings)</div>
+        <div class="spacer"></div>
+
+        @*Rorate*@
+        <div class="input-group">
+            <label for="rorate">Rorate:</label>
+            <input type="text" @bind="food.numRorate" id="rorate" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumRorate = food.numRorate * 525)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeRorate * food.numRorate)</div>
+        <div class="spacer"></div>
+
+        @*Milk*@
+        <div class="input-group">
+            <label for="milk">Milk:</label>
+            <input type="text" @bind="food.numMilk" id="milk" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumMilk = food.numMilk * 600)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeMilk * food.numMilk)</div>
+        <div class="spacer"></div>
+
+        @*Protein Shake*@
+        <div class="input-group">
+            <label for="protShake">Protein Shake:</label>
+            <input type="text" @bind="food.numProteinShake" id="protShake" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumProteinShake = food.numProteinShake * 750)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeProteinShake * food.numProteinShake)</div>
+        <div class="spacer"></div>
+
+        @*Shiny Oil*@
+        <div class="input-group">
+            <label for="shinyOil">Shiny Oil:</label>
+            <input type="text" @bind="food.numShinyOil" id="shinyOil" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumShinyOil = food.numShinyOil * 1000)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeShinyOil * food.numShinyOil)</div>
+        <div class="spacer"></div>
+
+        @*Protein Powder*@
+        <div class="input-group">
+            <label for="proteinPowder">Protein Powder:</label>
+            <input type="text" @bind="food.numProteinPowder" id="proteinPowder" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumProteinPowder = food.numProteinPowder * 1500)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeProteinPowder * food.numProteinPowder)</div>
+        <div class="spacer"></div>
+        
+        @*Premium Body Oil*@
+        <div class="input-group">
+            <label for="premBodyOil">Premium Body Oil:</label>
+            <input type="text" @bind="food.numPremiumOil" id="premBodyOil" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumPremiumOil = food.numPremiumOil * 3750)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timePremiumOil * food.numPremiumOil)</div>
+        <div class="spacer"></div>
+
+        @*Creatine Powder*@
+        <div class="input-group">
+            <label for="creatinePowder">Creatine Powder:</label>
+            <input type="text" @bind="food.numCreatinePowder" id="creatinePowder" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumCreatinePowder = food.numCreatinePowder * 5250)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeCreatinePowder * food.numCreatinePowder)</div>
+        <div class="spacer"></div>
+
+        @*Random Potion*@
+        <div class="input-group">
+            <label for="randPot">Random Potion:</label>
+            <input type="text" @bind="food.numRandPotion" id="randPot" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumRandPotion = food.numRandPotion * 15000)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeRandPotion * food.numRandPotion)</div>
+        <div class="spacer"></div>    
+
+        @*Small Stamina Potion*@
+        <div class="input-group">
+            <label for="smStam">Small Stamina Potion:</label>
+            <input type="text" @bind="food.numSmStamina" id="smStam" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumSmStamina = food.numSmStamina * 15000)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeSmStamina * food.numSmStamina)</div>
+        <div class="spacer"></div>
+        
+        @*Small Speed Potion*@
+        <div class="input-group">
+            <label for="smSpeed">Small Speed Potion:</label>
+            <input type="text" @bind="food.numSmSpeed" id="smSpeed" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumSmSpeed = food.numSmSpeed * 15000)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeSmSpeed * food.numSmSpeed)</div>
+        <div class="spacer"></div>
+
+        @*Small Power Potion*@
+        <div class="input-group">
+            <label for="smPower">Small Power Potion:</label>
+            <input type="text" @bind="food.numSmPower" id="smPower" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumSmPower = food.numSmPower * 15000)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeSmPower * food.numSmPower)</div>
+        <div class="spacer"></div>
+
+        @*Small Money Potion*@
+        <div class="input-group">
+            <label for="smMoney">Small Money Potion:</label>
+            <input type="text" @bind="food.numSmMoney" id="smMoney" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumSmMoney = food.numSmMoney * 15000)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeSmMoney * food.numSmMoney)</div>
+        <div class="spacer"></div>
+
+        @*Small Pump Potion*@
+        <div class="input-group">
+            <label for="smPump">Small Pump Potion:</label>
+            <input type="text" @bind="food.numSmPump" id="smPump" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumSmPump = food.numSmPump * 15000)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeSmPump * food.numSmPump)</div>
+        <div class="spacer"></div>
+
+        @*Secret Beans*@
+        <div class="input-group">
+            <label for="secBeans">Secret Beans:</label>
+            <input type="text" @bind="food.numSecretBeans" id="secBeans" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumSecretBeans = food.numSecretBeans * 18700)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeSecretBeans * food.numSecretBeans)</div>
+        <div class="spacer"></div>
+
+        @*Death Potion*@
+        <div class="input-group">
+            <label for="deathPot">Death Potion:</label>
+            <input type="text" @bind="food.numDeathPot" id="deathPot" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumDeathPot = food.numDeathPot * 37500)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeDeathPot * food.numDeathPot)</div>
+        <div class="spacer"></div>
+
+        @*Angel Potion*@
+        <div class="input-group">
+            <label for="angelPot">Angel Potion:</label>
+            <input type="text" @bind="food.numAngelPot" id="angelPot" autocomplete="off" />
+        </div>
+        <div>Cost: $@(sumFood.sumAngelPot = food.numAngelPot * 75000)</div>
+        <div>Time: @ConvertSecondsToHHMMSS(time.timeAngelPot * food.numAngelPot)</div>
+        <div class="spacer"></div>
+
+        <div>
+            <span>
+                Total Cost: $@(sumFood.sumChocBar + sumFood.sumChips + sumFood.sumChickWings + sumFood.sumMastDrink + sumFood.sumProtBar +
+                sumFood.sumCheapProtein + sumFood.sumSteak + sumFood.sumCheapOil + sumFood.sumRorate + sumFood.sumMilk + sumFood.sumProteinShake +
+                sumFood.sumShinyOil + sumFood.sumProteinPowder + sumFood.sumPremiumOil + sumFood.sumCreatinePowder + sumFood.sumRandPotion +
+                sumFood.sumSmStamina + sumFood.sumSmSpeed + sumFood.sumSmPower + sumFood.sumSmMoney + sumFood.sumSmPump + sumFood.sumSecretBeans +
+                sumFood.sumDeathPot + sumFood.sumAngelPot)
+            </span>
+        </div>
+
+        <div class="spacer"></div>
+    </div>
+</div>

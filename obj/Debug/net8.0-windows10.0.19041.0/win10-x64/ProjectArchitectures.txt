@@ -1,0 +1,1 @@
+C:\Users\kosti\source\repos\GymLeagueCalculator\GymLeagueCalculator.csproj;x64
